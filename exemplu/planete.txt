@@ -1,0 +1,9 @@
+﻿Id#Planeta#x#y#Apa#Radiatii#Descriere
+1#Pamant#820#110#0#0#Baza de lansare a misiunii.
+2#Luna#730#210#0#0#Primul popas. Aici echipajul a testat modulul de aterizare.
+3#Marte#640#330#1#0#Planeta rosie. Sub praf s-a gasit gheata din care se face apa.
+4#Phobos#560#400#0#0#Un satelit mic si intunecat, folosit ca statie de reparatii.
+5#Europa#380#450#1#0#Luna lui Jupiter, acoperita de gheata. Echipajul a umplut rezervoarele de apa.
+6#Mercur#210#120#0#1#Planeta cea mai apropiata de Soare. Nu face parte din traseul misiunii.
+7#Venus#470#60#0#1#Planeta cu nori de acid si radiatii puternice. Nu face parte din traseul misiunii.
+8#Titan#300#300#1#0#Satelitul lui Saturn, cu lacuri de metan. Nu face parte din traseul misiunii.
