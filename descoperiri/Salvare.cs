@@ -28,21 +28,21 @@ namespace Descoperiri
         {
             lstInsule.DataSource = lista;
             
-            lblNumar.Text = "Afisate: " + lista.Count + " | cu virusi: " + lista.Where(x => x.AreVirusi == true).Count();
+            lblNumar.Text = "Afisate: " + lista.Count + " | cu virusi: " + lista.Count(x => x.AreVirusi);
         }
 
         private void btnCauta_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(txtId.Text, out int id))
             {
-                MessageBox.Show("Scrie un numar", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Scrie un numar.", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             Insula ins = insule.FirstOrDefault(x => x.Id == id);
             if (ins == null) 
             {
-                MessageBox.Show("Nu exista insula cu Id-ul " + id, "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Nu exista insula cu Id-ul " + id + ".", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 
                 return;
             }

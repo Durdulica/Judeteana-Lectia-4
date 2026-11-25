@@ -46,7 +46,7 @@
             this.lstInsule.FormattingEnabled = true;
             this.lstInsule.ItemHeight = 19;
             this.lstInsule.Location = new System.Drawing.Point(13, 13);
-            this.lstInsule.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstInsule.Margin = new System.Windows.Forms.Padding(4);
             this.lstInsule.Name = "lstInsule";
             this.lstInsule.Size = new System.Drawing.Size(200, 211);
             this.lstInsule.TabIndex = 0;
@@ -102,7 +102,7 @@
             this.btnTraseu.Name = "btnTraseu";
             this.btnTraseu.Size = new System.Drawing.Size(171, 24);
             this.btnTraseu.TabIndex = 6;
-            this.btnTraseu.Text = "Pe traseu(2-7)";
+            this.btnTraseu.Text = "Pe traseu (2-7)";
             this.btnTraseu.UseVisualStyleBackColor = true;
             this.btnTraseu.Click += new System.EventHandler(this.btnTraseu_Click);
             // 
@@ -112,7 +112,7 @@
             this.btnInAfara.Name = "btnInAfara";
             this.btnInAfara.Size = new System.Drawing.Size(171, 24);
             this.btnInAfara.TabIndex = 7;
-            this.btnInAfara.Text = "In afara traseului(8-11)";
+            this.btnInAfara.Text = "In afara traseului (8-11)";
             this.btnInAfara.UseVisualStyleBackColor = true;
             this.btnInAfara.Click += new System.EventHandler(this.btnInAfara_Click);
             // 
@@ -134,7 +134,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Salvare";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

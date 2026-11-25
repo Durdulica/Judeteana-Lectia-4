@@ -5,7 +5,7 @@ namespace Descoperiri
 {
     public partial class Expeditie : Form
     {
-        private int zileHrana;
+        private int hrana;
         private int bogatii = 0;
         private int incarcatura = 0;
 
@@ -16,8 +16,10 @@ namespace Descoperiri
             CancelButton = btnIesire;
 
             lblExploratori.Text = nrExploratori.ToString();
-            zileHrana = 2 * nrExploratori * 100;
-            lblHrana.Text = zileHrana.ToString();
+            hrana = 2 * nrExploratori * 100;
+            incarcatura = nrExploratori * 90 + hrana;
+
+            lblHrana.Text = hrana.ToString();
             lblBogatii.Text = bogatii.ToString();
             lblIncarcatura.Text = incarcatura.ToString();
         }

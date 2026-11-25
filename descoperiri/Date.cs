@@ -9,21 +9,25 @@ namespace Descoperiri
         public static List<Insula> CitesteInsule(string cale, List<string> erori)
         {
             List<Insula> lista = new List<Insula>();
-            var reader = new StreamReader(cale);
 
-            if(reader == null)
+            if (!File.Exists(cale))
             {
                 erori.Add("Lipseste fisierul insule.txt de langa aplicatie.");
                 return lista;
             }
 
+            var reader = new StreamReader(cale);
+            
+
             string linie = reader.ReadLine();
-            int rand = 0;
+            int rand = 1;
             while ((linie = reader.ReadLine()) != null) 
             {
                 Insula ins = new Insula();
                 rand++;
+                if (string.IsNullOrWhiteSpace(linie)) continue;
                 string[] date = linie.Split('#');
+
                 if(date.Length != 7)
                 {
                     erori.Add("Randul " + rand + " este stricat si a fost sarit.");
@@ -83,6 +87,8 @@ namespace Descoperiri
                 ins.Descriere = date[6];
                 lista.Add(ins);
             }
+
+            reader.Close();
             return lista;
         }
     }
